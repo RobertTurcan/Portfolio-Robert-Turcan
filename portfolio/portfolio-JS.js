@@ -38,4 +38,21 @@ function contactHover() {
 }
 contactHover();
 
+function floatPort() {
 
+    const floatFirstProject = document.querySelector('.first-about-float');
+    const floatFirstImage = document.querySelector('.first-image-float');
+    const floatSecondProject = document.querySelector('.second-about-float');
+    const floatSecondImage = document.querySelector('.second-image-float');
+    
+    window.addEventListener('scroll', () => {
+        const scrollDelay = window.pageYOffset;
+        const val = scrollDelay * 0.10;
+        floatFirstProject.style.transform = `translateX(${-0.10 * val}%)`;
+        floatFirstImage.style.transform = `translateX(${0.10 * val}%)`;
+        floatSecondProject.style.transform = `translateX(${-0.03 * val}%)`;
+        floatSecondImage.style.transform = `translateX(${0.03 * val}%)`;
+    });
+}
+;
+floatPort();

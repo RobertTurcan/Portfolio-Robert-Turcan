@@ -35,6 +35,7 @@ header {
     z-index: 5;
     background: #e3eeff;
     color: #40130A;
+    margin-bottom: 170px;
 }
 
 nav {
@@ -75,123 +76,121 @@ nav a {
 /* MAIN SECTION */
 
 main {
-    min-height: 92vh;
-    color: #40130A;
-}
-
-.main-section {
-    display: flex;
-    flex-direction: column
-}
-
-.main-section h1 {
-    font-size: 2.3rem;
-    margin: auto 10px;
-}
-
-.language-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-
-.language-icon img {
-    width: 50px;
-    height: 50px;
-    margin: 12px 5px;
-    padding: auto 5px;
-}
-
-.code {
-    background: linear-gradient(to right, #232526, #414345); 
-    width: 70px;
-    height: 40px;
-    border: 2px solid #414345;
-    box-shadow: 0 0 2px 2px;
-    border-radius: 7px;
-    margin: 8px 12px;
-    text-align: center;
-}
-
-.code:hover {
-    background: #555A63;
-}
-
-.code a:hover {
-    color: #e3eeff;
-}
-
-.code a {
-    text-decoration: none;
-    color: #fdfbfb;
-    font-size: 1.3rem;
-    font-weight: bolder;
-    letter-spacing: 1.5px;
+    margin: 5px 15px;
 }
 
 .project {
     display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 10px 5px;
+    margin: 10px 25px 150px 25px;
+}
+
+/* first project container */
+
+.first-project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 5px;
+}
+
+/* second project container */
+
+.second-project-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 35px;
+}
+
+.buttons a:hover{
+    background-color: #fffbfb;
+    color: #40130A;
+    border: 1px solid #40130A;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons a {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 20px;
+    background-color: #40130A;
+    width: 60px;
+    height: 35px;
+    color: #fffbfb;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 1px 6px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
-.clearfix:after {
-    content: '';
-    display: table;
-    clear: both;
+.image-project img {
+    height: 250px;
+    width: 400px;
+    border-radius: 3px;
 }
 
-.gallery {
-    margin-top: 30px;
+.language-project img {
+    height: 50px;
+    width: 50px;
+    margin: 5px 2px;
+    padding: 3px;
+}
+
+.about-project {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.gallery:hover {
-    border: 2px solid #40130A;
-    animation: zoom 1s ease;
+.about-project h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: #40130A
 }
 
-@keyframes zoom {
-    0%{transform: scale(1.03)}
-    70%{transform: scale(1)}
+.about-project h2 {
+    font-style: italic;
+    font-size: 1.7rem;
+    margin-left: -25px;
+    margin-bottom: 10px; 
+    text-transform: lowercase;
+    color: #40130A;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
+.about-project p {
+    padding: 15px 5px;
+    font-size: 1.1rem;
+    width: 400px;
+    color: #40130A;
 }
 
-.caption {
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    box-shadow: 5px;
-}
 
-.flex {
-    padding: 5px;
-    float: left;
-    width: 24.995%;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    margin: auto 10px;
-    background: linear-gradient(to right, #232526, #414345);
-}
+/* FOOTER */
 
-@media screen and (max-width: 768px) {
-    .flex {
-        width: 45%;
-        margin: 4px 5px;
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .flex {
-        width: 90%;
-    }
+footer {
+    position: relative;
+    bottom: 3px;
+    left: 3px;
 }

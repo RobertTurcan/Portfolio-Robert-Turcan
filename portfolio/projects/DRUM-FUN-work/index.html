@@ -1,0 +1,72 @@
+
+
+
+
+<html>
+    <head>
+        <title>DRUM FUN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h2>DRUM FUN</h2>
+        <h3>Use your keyboard to play</h3>
+        <div class="keys">
+            <div class="first-line">
+                 <div data-key="68" class="key cymbal-one">
+                    <kbd>D</kbd>
+                    <span class="sound">Cymbal</span>
+                </div>
+                <div data-key="70" class="key bass-drum">
+                    <kbd>F</kbd>
+                    <span class="sound">Bass Drum</span>
+                </div>
+                <div data-key="76" class="key cymbal-two">
+                    <kbd>L</kbd>
+                    <span class="sound">Cymbal</span>
+                </div>
+            </div>
+            <div class="second-line">
+                <div data-key="83" class="key medium-tom">
+                    <kbd>S</kbd>
+                    <span class="sound">Medium Tom</span>
+                </div>
+                <div data-key="72" class="key small-tom">
+                    <kbd>H</kbd>
+                    <span class="sound">Small Tom</span>
+                </div>
+                <div data-key="75" class="key hi-hat">
+                    <kbd>K</kbd>
+                    <span class="sound">Hi Hat</span>
+                </div>
+            </div>
+            <div class="third-line">
+                <div data-key="65" class="key floor-tom">
+                    <kbd>A</kbd>
+                    <span class="sound">Floor Tom</span>
+                </div>
+                <div data-key="71" class="key sticks">
+                    <kbd>G</kbd>
+                    <span class="sound">Sticks</span>
+                </div>
+                <div data-key="74" class="key snare-drum">
+                    <kbd>J</kbd>
+                    <span class="sound">Snare Drum</span>
+                </div>
+            </div>
+        </div>
+
+        <audio data-key="70" src="sounds/Bass-Drum.mp3"></audio>
+        <audio data-key="71" src="sounds/Drum-Sticks-Hit-G.mp3"></audio>
+        <audio data-key="65" src="sounds/Floor-Tom-Drum.mp3"></audio>
+        <audio data-key="75" src="sounds/Hi-Hat-Open-Hit-C1.mp3"></audio>
+        <audio data-key="83" src="sounds/Medium-Tom-Drum.mp3"></audio>
+        <audio data-key="72" src="sounds/Small-Tom-Drum.mp3"></audio>
+        <audio data-key="74" src="sounds/Snare-Drum.mp3"></audio>
+        <audio data-key="68" src="sounds/Splash-Cymbal-Hit-B.mp3"></audio>
+        <audio data-key="76" src="sounds/Splash-Cymbal-Hit-C.mp3"></audio>
+
+    </body>
+    <script src="JS.js" type="text/javascript"></script>
+</html>
