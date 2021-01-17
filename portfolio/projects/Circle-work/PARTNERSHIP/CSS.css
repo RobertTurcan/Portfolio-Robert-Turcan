@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'circle-font';
-    src: url(../fonts/Quicksand-Regular.ttf) format('truetype');
+    src: url(../fonts/NanumGothic-Regular.ttf) format('truetype');
 }
 
 * {
@@ -71,6 +71,7 @@ nav {
 .nav-links li {
     opacity: 0;
     margin-top: 9rem;
+    list-style: none;
 }
 .nav-links li a {
     font-size: 25px;

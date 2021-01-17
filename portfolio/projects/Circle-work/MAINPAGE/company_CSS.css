@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'circle-font';
-    src: url(../fonts/Quicksand-Regular.ttf) format('truetype');
+    src: url(../fonts/NanumGothic-Regular.ttf) format('truetype');
 }
 
 * {
@@ -18,7 +18,7 @@ html {
 body {
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     color: #ffffff;
-    font-family: 'circle-font', serif;
+    font-family: 'circle-font', serif, monospace;
 }
 .line {
     width: 30px;
@@ -64,6 +64,7 @@ nav {
 .nav-links li {
     opacity: 0;
     margin-top: 9rem;
+    list-style: none;
 }
 .nav-links li a {
     font-size: 25px;
@@ -106,6 +107,13 @@ li.fade{
     text-transform: uppercase;
     display: block;
 }
+
+.company_about h3 {
+    text-transform:  uppercase;
+    padding-left: 14px;
+    font-weight: bolder;
+}
+
 .circle {
     background-image: url(Images/earth_lights.jpg);
     background-size: cover;
@@ -113,10 +121,6 @@ li.fade{
     height: auto;
     background-position: center center;
     box-shadow: 0 0 8px #150a13;
-}
-.circle h3 {
-    text-transform:  uppercase;
-    padding-left: 14px;
 }
 
 .hypertext {
