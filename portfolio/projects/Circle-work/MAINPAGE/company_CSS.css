@@ -1,0 +1,255 @@
+
+
+
+
+@font-face {
+    font-family: 'circle-font';
+    src: url(../fonts/Quicksand-Regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    font-family: 'circle-font', serif;
+}
+.line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+nav {
+    position: relative;
+    height: 15vh;
+    display: flex;
+    text-align: center;
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 40%;
+    transform: translate (-5%, -50%);
+    z-index: 3;  
+}
+.nav-links {
+    position: absolute;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    height: 170vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+   
+    
+    transition: all 1s ease-out;
+    pointer-events: none;  
+    
+}
+.nav-links.open {
+    clip-path: circle(1150px at 90% -15%);
+    -webkit-clip-path: circle(1150px at 90% -15%);
+
+    pointer-events: all;
+    z-index: 2;
+}
+.nav-links li {
+    opacity: 0;
+    margin-top: 9rem;
+}
+.nav-links li a {
+    font-size: 25px;
+}
+.nav-links li:nth-child(1){
+    transition: all 0.5s ease 0.5s;
+}
+.nav-links li:nth-child(2){
+    transition: all 0.5s ease 0.7s; 
+}
+.nav-links li:nth-child(3){
+    transition: all 0.5s ease 0.9s;
+}
+li.fade{
+    opacity: 1;
+}
+
+
+.logo-main-text {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    padding-left: 1.2rem;
+    font-size: 20px;
+    opacity: 1;
+    
+}
+.logo-main-text img {
+    width: 60px;
+}
+.company_about {
+    height: 90vh;
+    padding: 1.5rem;
+}
+.company_about h1 {
+    padding: 2rem 0rem 5rem 1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: block;
+}
+.circle {
+    background-image: url(Images/earth_lights.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    box-shadow: 0 0 8px #150a13;
+}
+.circle h3 {
+    text-transform:  uppercase;
+    padding-left: 14px;
+}
+
+.hypertext {
+    margin-left: 14px;
+    color: black;
+    background: linear-gradient(to right, #ffffff, #D1D7D7 );
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.hypertext:hover {
+    box-shadow: 0 0 10px #fffbff;
+}
+
+.sign_down {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-name: sign;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    display: block;
+    z-index: 1;
+    color: #fffbff;
+}
+
+@keyframes sign {
+    0% {opacity: 0.3; left: 48%; top: 86%;}
+    25% {opacity: 0.8; left: 48%; top: 88%;}
+    50% {opacity: 0.3; left: 48%; top: 86%;}
+    75% {opacity: 0.8; left: 48%; top: 88%;}
+    100% {opacity: 0.3; left: 48%; top: 86%;}
+
+}
+
+.BO {
+    background-image: url(Images/space_window_view.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    box-shadow: 0 0 8px #CFD2E3;
+}
+.Boeing {
+    background-image: url(Images/space_shuttle.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    box-shadow: 0 0 8px #CFD2E3;
+}
+.SpaceX {
+    background-image: url(Images/earth_sea.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    box-shadow: 0 0 8px #CFD2E3;
+}
+.media ul {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    padding: 2rem 5rem 5rem 2rem;
+    background-color: #01050e; 
+    align-content: center;
+
+}
+.media li, a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: bold;
+}
+#BO_logo {
+    width: 100px;
+    height: 60px;
+    margin-bottom: -64vh;
+    margin-left: -14vh;
+}
+#Boeing_logo {
+    width: 170px;
+    height: 50px;
+    margin-bottom: -64vh;
+    margin-left: -14vh;
+}
+#spacex_logo {
+    width: 170px;
+    height: 50px;
+    margin-bottom: -55vh;
+    margin-left: -14vh;
+}
+.media_icon {
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+#click {
+    color: #4d5e9d;
+    font-size: 20px;
+}
+
+.hide_BO {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s all ease-in-out;
+}
+.hide_BG {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s all ease-in-out;
+}
+.hide_X {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1.2s all ease-in-out;
+}
+
+
+.text_appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
