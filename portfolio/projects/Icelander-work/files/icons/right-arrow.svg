@@ -1,0 +1,12 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+
+ <title/>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <polyline transform="rotate(180 12,12) " stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" stroke="#1d1d1b" fill="none" points="16.34 20.59 7.66 11.9 16.14 3.41" id="_Path_" class="Graphic-Style"/>
+ </g>
+</svg>

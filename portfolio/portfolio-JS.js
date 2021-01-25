@@ -49,6 +49,9 @@ function floatPort() {
     const floatThirdProject = document.querySelector('.third-about-float');
     const floatThirdImage = document.querySelector('.third-image-float');
     
+    const floatFourthProject = document.querySelector('.fourth-about-float');
+    const floatFourthImage = document.querySelector('.fourth-image-float');
+    
     window.addEventListener('scroll', () => {
         const scrollDelay = window.pageYOffset;
         const val = scrollDelay * 0.30;
@@ -61,6 +64,9 @@ function floatPort() {
         
         floatThirdProject.style.transform = `translateX(${0.01 * val}%)`;
         floatThirdImage.style.transform = `translateX(${-0.01 * val}%)`;
+        
+        floatFourthProject.style.transform = `translateX(${0.01 * val}%)`;
+        floatFourthImage.style.transform = `translateX(${-0.005 * val}%)`;
     });
 }
 ;

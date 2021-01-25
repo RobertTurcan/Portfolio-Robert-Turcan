@@ -1,0 +1,246 @@
+
+
+/* main */
+
+@font-face {
+    font-family: 'lobster';
+    src: url(files/fonts/Lobster-Regular.ttf)   
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url(files/fonts/Nunito-Regular.ttf)   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+
+header {
+    font-family: 'nunito';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 13vh;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: #B8B5AF;
+    opacity: 0.95;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+    padding: 3px 5px;
+    margin: 5px 10px;
+}
+
+#icon-logo {
+    height: 105px;
+    width: 140px;
+    z-index: 5;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px 15px;
+    padding: 1px 30px;
+}
+
+nav ul li a:hover {
+    color: #a91e25;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: auto 13px;
+    padding: 5px  7px;
+    font-size: 31px;
+    color: #1C1B17 ;
+    text-transform: uppercase;
+}
+
+/* main section */
+
+.container {
+    height: 100vh;
+    position: relative;
+    user-select: none;
+    overflow: hidden;
+}
+
+.container img {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container video {
+    position: absolute;
+    left:18em;
+    top:49%;
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.container .container-text {
+    z-index: 3;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    font-size: 60px;
+    font-family: 'lobster';
+    color: #1C1B17;
+}
+
+#we-person {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#we-person:hover {
+    color: #a91e25;;
+}
+
+#we-text {
+    opacity: 0;
+    transition: all 1.05s ease-in-out;
+    font-family: 'nunito';
+    font-size: 42px;
+    width: 200px;
+    font-weight: 900;
+}
+
+#we-text.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+#we-question {
+    font-family: 'lobster';
+    font-size: 60px;
+    color: #a91e25;
+}
+
+.sign-left img, .sign-right img {
+    width: 30px;
+    height: 40px;
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes arrow-scale {
+    50% {transform: scale(1.0)}
+    60% {transform: scale(1.25)}
+}
+
+
+.sign-left {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    animation: arrow-scale;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+
+.sign-right {
+    position: absolute;
+    top: 16%;
+    right: 0;
+    animation: arrow-scale;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+
+@media screen and (max-width: 850px) {
+    nav ul li a {
+        margin: 1px 1.2px;
+        padding: 2px;
+        font-size: 20px;
+    } 
+    
+    nav ul li {
+        padding: 1px 1.2px;
+    }
+    
+    .sign-left, .sign-right {
+        display: none;
+    }
+
+    .container video {
+
+        left:3em;
+        top:49%;
+    }
+    
+    #icon-logo {
+    height: 107px;
+    width: 145px;
+    z-index: 5;
+    margin-left: 5px;
+}
+}
+
+@media screen and (max-width: 1050px) {
+    .container video {
+
+        left:10%;
+        top:49%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container video {
+        opacity: 0;
+    }
+    .container img {
+        opacity: 0;
+    }
+    .container {
+        background-image: url(files/backpacker.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .container .container-text {
+        top: 37%;
+        left: 30%;
+    }
+    .container-text h1 {
+        font-size: 70px;
+    }
+    #we-text {
+        font-size: 30px;
+    }
+    #we-question {
+        font-size: 40px;
+    }
+}
+
+
