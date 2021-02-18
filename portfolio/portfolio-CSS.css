@@ -1,0 +1,230 @@
+
+
+
+
+/*MAIN*/
+
+@font-face {
+    font-family: 'resume';
+    src: url(../fonts/IBMPlexSerif-ExtraLight.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, #7272FA 1%, #98AAFA 100%);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7272FA;
+}
+
+body {
+    font-family: 'resume', sans-serif;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+/*NAVIGATION*/
+
+header {
+    position: sticky;
+    top: 0;
+    background: inherit;
+    text-transform: uppercase;
+    z-index: 5;
+    background: #e3eeff;
+    color: #40130A;
+    margin-bottom: 170px;
+}
+
+nav {
+    min-height: 8vh;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+nav h1 {
+    display: flex;
+    flex: 1;
+    font-size: 2.5rem;
+}
+
+.zero-float {
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    flex: 1;
+}
+
+nav a {
+    color: #40130A;
+    text-decoration: none;
+    margin: auto 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/* MAIN SECTION */
+
+main {
+    margin: 5px 15px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 10px 5px;
+    margin: 10px 25px 150px 25px;
+}
+
+/* first project container */
+
+.odd-project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 5px;
+}
+
+/* second project container */
+
+.even-project-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 35px;
+}
+
+.buttons a:hover{
+    background-color: #fffbfb;
+    color: #40130A;
+    border: 1px solid #40130A;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #40130A;
+    width: 60px;
+    height: 35px;
+    color: #fffbfb;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 1px 6px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.image-project img {
+    height: 250px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.language-project img {
+    height: 50px;
+    width: 50px;
+    margin: 5px 2px;
+    padding: 3px;
+}
+
+.about-project {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.about-project h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: #40130A
+}
+
+.about-project h2 {
+    font-style: italic;
+    font-size: 1.7rem;
+    margin-left: -25px;
+    margin-bottom: 10px; 
+    text-transform: lowercase;
+    color: #40130A;
+}
+
+.about-project p {
+    padding: 15px 5px;
+    font-size: 1.1rem;
+    width: 400px;
+    color: #40130A;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    bottom: 3px;
+    left: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-project h1 {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color: #40130A
+}
+
+.about-project h2 {
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-left: -2px;
+    margin-bottom: 10px; 
+    text-transform: lowercase;
+    color: #40130A;
+}
+}
