@@ -106,7 +106,7 @@ main {
 
 /* first project container */
 
-.first-project-container {
+.odd-project-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -118,7 +118,7 @@ main {
 
 /* second project container */
 
-.second-project-container {
+.even-project-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;

@@ -92,20 +92,6 @@ function languagesHover() {
 ;
 languagesHover();
 
-function calendarHover() {
-
-    let calendar = document.querySelector('#weekday');
-    calendar.addEventListener('mouseover', () => {
-        document.querySelector('.calendar').style.visibility = 'inherit';
-    });
-    calendar.addEventListener('mouseleave', () => {
-        document.querySelector('.calendar').style.visibility = 'hidden';
-    });
-}
-;
-calendarHover();
-
-
 /*FLOATING TEXT*/
 
 function floatingText() {
@@ -183,24 +169,11 @@ function galleryCarousel() {
         images[index].classList.add('active');
     }
 }
-;
 galleryCarousel();
 
-/* DAY OF WEEK */
 
-function weekday() {
-    const date = new Date();
-    const weekday = new Array(7);
-    weekday[0] = 'sunday';
-    weekday[1] = 'monday';
-    weekday[2] = 'tuesday';
-    weekday[3] = 'wednesday';
-    weekday[4] = 'thursday';
-    weekday[5] = 'friday';
-    weekday[6] = 'saturday';
-
-    const getWeekDay = weekday[date.getDay()];
-    document.getElementById('weekday').innerHTML = getWeekDay.toUpperCase();
-}
-;
-weekday();
+(function sendPigeon(){
+    document.querySelector('#pigeon-btn').onclick = function() {
+        document.querySelector('#pigeon').style.transform = 'translateX(1000px)';
+    };
+}());

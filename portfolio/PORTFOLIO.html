@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="portfolio-CSS.css" rel="stylesheet" type="text/css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -23,8 +24,8 @@
         </header>
         <main>
             <section class='project'>
-                <div class="first-project-container">
-                    <div class="about-project first-about-float">
+                <div class="odd-project-container">
+                    <div class="about-project">
                         <h2>first</h2>
                         <h1>Th&Oslash;rsten Thunder Garage</h1>
                         <p>Responsive landing page with CSS transform animations and hamburger menu.</p>
@@ -33,7 +34,7 @@
                         <img src="../icons/html5-portfolio-icon.svg" alt="html5">
                         <img src="../icons/css3-portfolio-icon.svg" alt="css3">
                     </div>
-                    <div class="image-project first-image-float">
+                    <div class="image-project">
                         <img src="../images/TTG-welcome-page.jpg" alt="TTG-project">
                     </div>
                 </div>
@@ -42,9 +43,9 @@
                     <a href="https://github.com/RobertTurcan/TTG-Landing-page" target="_blank" >code</a>
                 </div>
             </section> 
-            <section class='project'>
-                <div class="second-project-container" id="drum-fun">
-                    <div class="about-project second-about-float">
+            <section class='project' data-aos="fade-left">
+                <div class="even-project-container" id="drum-fun">
+                    <div class="about-project">
                         <h2>second</h2>
                         <h1>drum fun</h1>
                         <p>Drum music player, simple with few lines of JavaScript code.</p>
@@ -54,7 +55,7 @@
                         <img src="../icons/css3-portfolio-icon.svg" alt="css3">
                         <img src="../icons/JavaScript-portfolio-icon.png" alt="JS">
                     </div>
-                    <div class="image-project second-image-float">
+                    <div class="image-project">
                         <img src="../images/DRUM-FUN.jpg" alt="drum-project">
                     </div>
                 </div>
@@ -63,9 +64,9 @@
                     <a href="https://github.com/RobertTurcan/Drum-fun" target="_blank" >code</a>
                 </div>
             </section>
-            <section class='project'>
-                <div class="first-project-container" id="circle">
-                    <div class="about-project third-about-float">
+            <section class='project' data-aos="fade-right">
+                <div class="odd-project-container" id="circle">
+                    <div class="about-project">
                         <h2>third</h2>
                         <h1>Circle</h1>
                         <p>Responsive website designed for fictive space company.</p>
@@ -75,7 +76,7 @@
                         <img src="../icons/css3-portfolio-icon.svg" alt="css3">
                         <img src="../icons/JavaScript-portfolio-icon.png" alt="JS">
                     </div>
-                    <div class="image-project third-image-float">
+                    <div class="image-project">
                         <img src="../images/Circle.jpg" alt="circle-project">
                     </div>
                 </div>
@@ -84,9 +85,9 @@
                     <a href="https://github.com/RobertTurcan/Circle-space-company" target="_blank" >code</a>
                 </div>
             </section>
-            <section class='project'>
-                <div class="second-project-container" id="icelander">
-                    <div class="about-project fourth-about-float">
+            <section class='project' data-aos="fade-left">
+                <div class="even-project-container" id="icelander">
+                    <div class="about-project">
                         <h2>fourth</h2>
                         <h1>Icelander</h1>
                         <p>Small responsive travel website about Iceland.</p>
@@ -96,7 +97,7 @@
                         <img src="../icons/css3-portfolio-icon.svg" alt="css3">
                         <img src="../icons/JavaScript-portfolio-icon.png" alt="JS">
                     </div>
-                    <div class="image-project fourth-image-float">
+                    <div class="image-project">
                         <img src="../images/icelander-welcomepage.jpg" alt="icelander-project">
                     </div>
                 </div>
@@ -104,8 +105,31 @@
                     <a href="projects/Icelander-work/index.html" target="_blank" >Visit</a>
                     <a href="https://github.com/RobertTurcan/Icelander" target="_blank" >code</a>
                 </div>
+            </section>
+            <section class='project' data-aos="fade-right">
+                <div class="odd-project-container" id="hyperia">
+                    <div class="about-project">
+                        <h2>fifth</h2>
+                        <h1>Hyperia</h1>
+                        <p>Home page for Hyperia company</p>
+                    </div>
+                    <div class="language-project">                
+                        <img src="../icons/html5-portfolio-icon.svg" alt="html5">
+                        <img src="../icons/css3-portfolio-icon.svg" alt="css3">
+                        <img src="../icons/JavaScript-portfolio-icon.png" alt="JS">
+                        <img src="../icons/sass-portfolio-icon.png" alt="sass">
+                        <img src="../icons/adobeai-portfolio-logo.svg" alt="adobe">
+                    </div>
+                    <div class="image-project fifth-image-float">
+                        <img src="../images/hyperia-screen.jpg" alt="icelander-project">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="projects/Hyperia-work/index.html" target="_blank" >Visit</a>
+                    <a href="https://github.com/RobertTurcan/Hyperia-company" target="_blank" >code</a>
+                </div>
             </section>  
-            
+
         </main>
         <footer>
             2021
@@ -113,4 +137,11 @@
 
     </body>
     <script src="portfolio-JS.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 190,
+            duration: 900
+        });
+    </script>
 </html>

@@ -12,9 +12,9 @@
     <body>
         <header>
             <nav>
-                <h1>Hello!<p class='zero-float'> i'm</p></h1>
+                <h1>Hello!<span class='zero-float'>i'm</span></h1>
                 <ul>
-                    <li id='home-id' class='home-lens'><a href="#home-id">Home</a></li>
+                    <li id='home-id' class="home-lens"><a href="#home-id">Home</a></li>
                     <li class='goals-lens'><a href="#goals">goals</a></li>
                     <li class='portfolio-lens'><a href="portfolio/PORTFOLIO.html" target="_blank">Portfolio</a></li>
                     <li class='contact-lens'><a href="contact/CONTACT.html" target="_blank">Contact</a></li>
@@ -34,7 +34,7 @@
                 <h2 class="fifth-float">Clean and readable work without <span class="spaghetti">spaghetti</span> code</h2>
                 <h2 class="sixth-float">Responsive design on every device</h2>
                 <h2 class="seventh-float">Learn new <span class="languages">languages</span> and frameworks</h2>
-                <h2 class="hidden-h2"><img src="icons/node-js.svg" alt="node"><img src="icons/react.svg" alt="react"><img src="icons/sql.svg" alt="sql"></h2>
+                <h2 class="hidden-h2"><img src="icons/JavaScript-portfolio-icon.png" alt="JS"><img src="icons/react.svg" alt="react"><img src="icons/php-icon.svg" alt="php"></h2>
                 <h2 class="eighth-float">Have some fun</h2> 
             </section>
             <section class='portfolio'>
@@ -59,6 +59,10 @@
                                     <img src="images/icelander-welcomepage.jpg" alt="work">
                                     <div class="gallery-caption"><a href="https://github.com/RobertTurcan/Icelander" target="_blank">CODE</a><a href="portfolio/PORTFOLIO.html#icelander" target="_blank">VIEW</a></div>
                                 </div>
+                                <div class="item">
+                                    <img src="images/hyperia-screen.jpg" alt="work">
+                                    <div class="gallery-caption"><a href="https://github.com/RobertTurcan/Hyperia-company" target="_blank">CODE</a><a href="portfolio/PORTFOLIO.html#hyperia" target="_blank">VIEW</a></div>
+                                </div>
                             </div>
                             <div class="slide-left"><img src="icons/arrow_left_icon.svg" alt=""></div>
                             <div class="slide-right"><img src="icons/arrow_right_icon.svg" alt=""></div>
@@ -71,15 +75,17 @@
                 <h3>Turcan.robert15@gmail.com</h3>
                 <h2>phone number</h2>
                 <h3>+421 903 536 613</h3>
-                <div class='calendar-section'>
-                <h2>have a nice <span id='weekday'></span></h2>
-                <div class='calendar'><img src="icons/calendar_icon.svg" alt="calendar"></div>
+                
+                <div class="send-pigeon">
+                    <h3>or send me a pigeon</h3>
+                    <div id="pigeon-btn">SEND</div>
+                    <img id="pigeon" src="icons/pigeon-animated.gif" alt="pigeon">
                 </div>
             </section>
         </main>
         <footer>
             <div>2021</div>
-        </footer> 
+        </footer>
+        <script src="Resume-JS.js" type="text/javascript"></script>
     </body>
-    <script src="Resume-JS.js" type="text/javascript"></script>
 </html>
