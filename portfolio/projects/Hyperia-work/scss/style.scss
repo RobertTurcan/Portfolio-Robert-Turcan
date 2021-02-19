@@ -1,0 +1,37 @@
+
+
+
+
+// IMPORT
+//........................................
+
+@import '_variables';
+@import '_general';
+@import '_header';
+@import '_main';
+@import '_aside';
+@import '_footer';
+@import '_media-query';
+
+// FONTS
+//........................................
+
+@font-face {
+    font-family: 'worksans';
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
+
+
+//convert px to em
+
+@function pxToEm ($size, $context: 16) {
+    @return ($size / $context) + em;
+};
+
+
+
+
+
+
+
+

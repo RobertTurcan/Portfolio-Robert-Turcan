@@ -1,0 +1,200 @@
+
+
+
+
+//convert px to em
+
+@function pxToEm ($size, $context: 16) {
+    @return ($size / $context) + em;
+};
+
+// content welcome section
+
+main {
+    margin: 0 pxToEm(170);
+    background: #f8f9fa;
+}
+
+main .purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: pxToEm(60) 0;
+    position: relative;
+}
+
+main .purpose h1 {
+    font-size: pxToEm(45);
+    color: $color-text-darken;
+    margin: pxToEm(15);
+    padding-bottom: pxToEm(7);
+    position: relative;
+    text-align: center;
+}
+
+main .purpose h1:before {
+    content: '';
+    box-shadow: 0 2px 0 #E15040;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    height: 2px;
+    width: 30%;
+}
+
+main .purpose .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .purpose .container article {
+    padding: pxToEm(20);
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .purpose .container article img {
+    height: pxToEm(170);
+    width: pxToEm(120);
+    margin: 0;
+    padding: 0;
+}
+
+main .purpose .container article h3 {
+    font-size: pxToEm(25);
+    margin-bottom: pxToEm(20);
+    color: $color-text-darken;
+}
+
+main .purpose .container article p {
+    font-size: pxToEm(18);
+    margin: pxToEm(5);
+    line-height: 1.5;
+    color: $color-text-muted;
+    max-width: pxToEm(200);
+}
+
+main .purpose .container article a {
+    text-decoration: none;
+    color: $color-text-anchor;
+    font-weight: bold;
+    margin: pxToEm(5);
+    padding: pxToEm(7);
+}
+
+main .purpose .container article a:hover {
+    color: darken($color-text-anchor, 20%);
+}
+
+main .purpose .container article a img {
+    height: pxToEm(25);
+    width: pxToEm(50);
+    padding: 1px;
+    margin: pxToEm(-9) pxToEm(-5) pxToEm(-5) pxToEm(0);
+    background: none;
+}
+
+main .purpose .container article a:hover > img {
+    transform: translateX(10px);
+    transition: 0.5s ease;
+}
+
+main .worldwide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: pxToEm(150) 0;
+    position: relative;
+}
+
+main .worldwide h1 {
+    font-size: pxToEm(45);
+    color: $color-text-darken;
+    margin: pxToEm(15);
+    padding-bottom: pxToEm(7);
+    position: relative;
+    text-align: center;
+}
+
+main .worldwide h1:before {
+    content: '';
+    box-shadow: 0 2px 0 #E15040;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    height: 2px;
+    width: 30%;
+}
+
+main .worldwide article {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: pxToEm(40) pxToEm(20);
+}
+
+main .worldwide article p {
+    font-size: pxToEm(18);
+    margin: pxToEm(45) pxToEm(15);
+    line-height: 1.5;
+    color: $color-text-muted;
+    max-width: pxToEm(330);
+    display: flex;
+    align-items: center;
+}
+
+main .worldwide article img {
+    height: pxToEm(450);
+    width: pxToEm(850);
+}
+
+main .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: pxToEm(150) 0;
+}
+
+main .projects h1 {
+    font-size: pxToEm(45);
+    color: $color-text-darken;
+    margin: pxToEm(15);
+    padding-bottom: pxToEm(7);
+    position: relative;
+    text-align: center;
+}
+
+main .projects h1:before {
+    content: '';
+    box-shadow: 0 2px 0 #E15040;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    height: 2px;
+    width: 30%;
+}
+
+main .projects article {
+    display: flex;
+    margin: pxToEm(40) pxToEm(20);
+}
+
+main .projects article p {
+    font-size: pxToEm(18);
+    margin: pxToEm(45) pxToEm(15);
+    line-height: 1.5;
+    color: $color-text-muted;
+    max-width: pxToEm(350);
+}
+
+main .projects article img {
+    height: pxToEm(500);
+    width: pxToEm(900);
+}
+

@@ -1,0 +1,26 @@
+
+
+//convert px to em
+
+@function pxToEm ($size, $context: 16) {
+    @return ($size / $context) + em;
+};
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f8f9fa;
+}
+
+* {
+    font-family: $font-family-worksans;
+}
+
+
+
+

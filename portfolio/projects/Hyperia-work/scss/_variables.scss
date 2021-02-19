@@ -1,0 +1,26 @@
+
+//convert px to em
+
+@function pxToEm ($size, $context: 16) {
+    @return ($size / $context) + em;
+};
+
+
+$color-text-lighten: #f8f9fa;
+$color-text-darken: #343a40;
+$color-text-muted: #6c757d;
+$color-text-anchor: #4D39BF;
+
+$color-bg-lighten: #6c757d;
+$color-bg-darken: #343a40;
+$color-bg-muted: #0f0a38;
+
+$color-item-colorfull: #17a2b8;
+
+$color-button-colorfull: #ADFF70;
+
+$font-size-base: 100%;
+$font-family-worksans: 'worksans', sans-serif, serif, Georgia;
+
+$side-margin-all: pxToEm(150);
+

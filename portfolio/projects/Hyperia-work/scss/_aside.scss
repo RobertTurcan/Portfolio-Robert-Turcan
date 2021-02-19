@@ -1,0 +1,96 @@
+
+
+
+
+.apply {
+    background-image: linear-gradient(180deg,#0df,#1a9ac3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-text-darken;
+    box-shadow: 0 0 6px $color-bg-lighten;
+}
+
+.apply h1 {
+    font-size: pxToEm(40);
+    margin-top: pxToEm(55);
+    background: none;
+    text-align: center;
+}
+
+.apply #btn {
+    font-size: pxToEm(20);
+    background: $color-button-colorfull;
+    border: 1px solid $color-button-colorfull;
+    border-radius: 5px;
+    width: pxToEm(100);
+    text-align: center;
+    margin-bottom: pxToEm(20);
+    margin-top: pxToEm(20);
+    padding: pxToEm(6);
+    box-shadow: 0 0 7px $color-bg-darken;
+    color: $color-text-darken;
+    padding: pxToEm(5);
+    cursor: pointer;
+}
+
+.apply #superhide-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-button-colorfull;
+    box-shadow: 0 0 7px $color-bg-darken;
+    padding: pxToEm(5);
+    margin: pxToEm(10);
+    border-radius: pxToEm(4);
+    visibility: hidden;
+}
+
+.apply #superhide-contact.show {
+    visibility: visible;
+}
+
+.apply #superhide-contact li {
+    list-style: none;
+    font-size: pxToEm(25);
+    margin: pxToEm(1);
+}
+
+.empty-aside img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.pre-footer {
+    background-color: darken($color-bg-darken,10%);
+}
+
+.pre-footer ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pre-footer ul li {
+    list-style: none;
+    padding: pxToEm(90) pxToEm(18);
+}
+
+.pre-footer ul li:hover {
+    transform:scale(1.15);
+    transition: 0.2s ease-in;
+}
+
+.pre-footer ul li a {
+    color: darken($color-text-lighten,20%);
+    text-decoration: none;
+    padding: pxToEm(10)
+}
+
+.pre-footer ul li a:hover {
+    color: darken($color-text-lighten, 15%);
+}
