@@ -1,0 +1,59 @@
+
+
+main {
+    margin-top: calcEm(200); 
+}
+
+main .portfolio-container {
+
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+main section div {
+    display: block;
+    width: 70%;
+    margin: calcEm(125) 0;
+    background: $color-bg-pale;
+    text-align: center;
+}
+
+
+main section h2 {
+    font-size: calcEm(75);
+    text-transform: uppercase;
+    margin: 0 calcEm(8);
+    font-family: $font-family-raleway;
+    background: transparent;
+    color: $color-text-darken;
+    position: absolute;
+    width: 100%;
+    top: calcEm(8);
+    letter-spacing: calcEm(1.2);
+}
+
+main section h4 {
+    color: $color-text-darken;
+    font-size: calcEm(25);
+    position: absolute;
+}
+
+main section a img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+main section .odd {
+    flex-direction: row;
+}
+
+main section .even {
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,150 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $font-size-base;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+    opacity: 1;
+    font-size-adjust: 0.5;
+}
+
+
+body::after {
+    animation: grain 12s steps(10) infinite;
+    background-image: url(../images/homepage-images/noise-bg.png);
+    content: "";
+    height: 300%;
+    left: -50%;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+    opacity: 0.6;
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+}
+
+main {
+    margin: 0 calcEm(105);
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+header {
+    font-family: $font-family-raleway-bold;
+}
+
+main, .gallery h1, .about h1, .contact h1 {
+    font-family: $font-family-raleway;
+}
+
+
+
+.animated-scroll-mouse {
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    z-index: 4;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-scroll-mouse img { 
+    width: calcEm(60);
+    height: calcEm(60);
+    animation: rotate-around 14s linear infinite;
+}
+
+@keyframes rotate-around {
+    0% {transform: rotate(0deg)};
+    100% {transform: rotate(360deg)};
+}
+
+#cursor {
+    position: absolute;
+    width: calcEm(60);
+    height: calcEm(60);
+    border: 2.2px solid $color-bg-lighten;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 6;
+}
+
+.link-scale {
+    background: url(../images/icons/click-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+}
+
+.image-hover {
+    background: url(../images/icons/view-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.image-hover-portfolio {
+    background: url(../images/icons/visit-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.transition-1 {
+    position: fixed;
+    z-index: 101; /*dalmatians*/
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    transition: 1.1s ease-out;
+    pointer-events: none;
+}
+
+.transition-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.transition-1.is-active {
+    pointer-events: all;
+    display: initial;
+}
+
+.content-transition {
+    opacity: 0;
+    transition: 1.1s ease-in-out;
+}
+
+.content-transition.is-content-active {
+    opacity: 1;
+}

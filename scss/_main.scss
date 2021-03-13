@@ -1,0 +1,307 @@
+
+
+
+
+
+
+// FIRST SECTION
+
+main .welcome {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: calcEm(150);
+}
+
+
+main .welcome .hello-div {
+    color: $color-text-darken;
+    font-size: calcEm(30);
+    text-align: left;
+    text-transform: uppercase;
+    padding: 4% 0;
+}
+
+main .welcome .hello-div h1:nth-child(1) {
+    margin-bottom: calcEm(10);
+    font-size: calcEm(30);
+}
+
+main .welcome .hello-div h1 {
+    font-size: calcEm(40);
+}
+
+main .welcome .hello-div img {
+    height: calcEm(60);
+    width: calcEm(60);
+    position: absolute;
+    bottom: calcEm(5);
+    left: 0;
+    animation: rotate-around 14s linear infinite;
+}
+
+main .welcome .portfolio-div {
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;   
+}
+
+main .welcome .portfolio-div h2 {
+    font-size: calcEm(30);
+    color: $color-text-darken;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+main .welcome .portfolio-div h1 {
+    display: inline-block;
+}
+
+main .welcome .portfolio-div h1 a {
+    text-decoration: none;
+    color: $color-text-darken;
+    z-index: 5;
+    font-size: calcEm(55);
+}
+
+main .welcome .portfolio-div #hidden-heading {
+    display: none;
+}
+
+main .welcome .portfolio-div #hidden-heading span {
+    color: $color-bg-lighten;
+}
+
+// SECOND SECTION
+
+
+main .gallery {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: calcEm(300);
+    position: relative;
+    z-index: 1;
+}
+
+main .gallery h1 {
+    font-size: calcEm(60);
+    color: $color-text-darken;
+    text-transform: uppercase;
+    margin-bottom: calcEm(20);
+}
+
+main .gallery article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: calcEm(15);
+}
+
+main .gallery article .cover-container {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+main .gallery article .cover-container img {
+    width: 70%;
+    height: 70%;
+    max-width: 100%;
+    border-radius: calcEm(2);
+}
+
+main .gallery article .project-name-container {
+    height: 100%;
+    width: 50%;
+}
+
+main .gallery article .project-name-container h2 {
+    font-size: calcEm(40);
+    margin: calcEm(12) 0;
+    cursor: pointer;
+    letter-spacing: calcEm(1.1);
+    position: relative;
+    display: flex;
+}
+
+main .gallery article .project-name-container h2:hover {
+    transform: skewX(-5deg);
+}
+
+// THIRD SECTION
+
+main .about {
+    width: 100%;
+    max-width: 100%;
+    margin-top: calcEm(200);
+    position: relative;
+}
+
+main .about h1 {
+    font-size: calcEm(60);
+    margin-bottom: calcEm(20);
+    color: $color-text-darken;
+    text-transform: uppercase;
+}
+
+main .about h2 {
+    margin-bottom: calcEm(25);
+    font-size: calcEm(30);
+}
+
+main .about article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+main .about .about-section-div-one {
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    position: relative;
+}
+
+main .about .about-section-div-one h2 {
+    text-align: left;
+}
+
+main .about .about-section-div-one p {
+    font: {
+        size: calcEm(27);
+        weight: bold;
+    } 
+    color: $color-text-darken;
+    line-height: calcEm(30);
+    text-align: justify;
+}
+
+main .about .about-section-div-one p a {
+    text-decoration: none;
+    font: {
+        size: inherit;
+        weight: bold;
+    } 
+    color: $color-text-darken;
+}
+
+main .about article div h2 {
+    font-size: calcEm(30);
+    margin: calcEm(30) calcEm(20);
+    z-index: 1;
+    color: $color-text-darken;
+}
+
+main .about article div h3 {
+    font-size: calcEm(22);
+}
+
+main .about .about-section-div-two {
+    height: 100%;
+    width: 70%;
+    margin-top: calcEm(15);
+    text-align: center;
+    font: {
+        size: calcEm(30);
+        weight: bold;
+    } 
+    color: $color-text-darken;
+    line-height: calcEm(30);
+}
+
+main .about img {
+    height: auto;
+    width: calcEm(20);
+    margin: calcEm(-5) calcEm(3);
+}
+
+
+
+// FOURTH SECTION
+
+main .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-top: calcEm(200);
+    position: relative;
+}
+
+main .contact h1 {
+    font-size: calcEm(60);
+    margin-bottom: calcEm(20);
+    color: $color-text-darken;
+    text-transform: uppercase;
+}
+
+main .contact article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: calcEm(20) auto;
+    flex-direction: column;
+}
+
+main .contact article h3 {
+    font-size: calcEm(30);
+    text-align: inline;
+    width: 100%;
+    color: $color-text-darken;
+}
+
+main .contact article h2 {
+    font-size: calcEm(45);
+    letter-spacing: calcEm(2);
+    color: $color-text-darken;
+    margin: calcEm(15) auto;
+}
+
+main .contact article h2 a {
+    color: $color-text-darken;
+    text-decoration: none;
+}
+
+main .contact article .contact-media-container {
+    display: flex;
+}
+
+main .contact article .contact-media-container a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+main .contact article .contact-media-container a img {
+    width: calcEm(70);
+    height: auto;
+    margin: calcEm(10) calcEm(20);
+}
+
+main .contact article .contact-media-container a span {
+    opacity: 0;
+    font-size: calcEm(20);
+    font-weight: bolder;
+    color: $color-text-darken;
+}
+
+
+
+
+
+
+
+

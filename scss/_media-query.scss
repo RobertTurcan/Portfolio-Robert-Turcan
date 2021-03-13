@@ -1,0 +1,277 @@
+
+
+
+
+/* ------------------- 1200px ------------------------ */ 
+
+
+@media (max-width: 1199.98px) {
+
+    main {
+        margin: 0 calcEm(75);
+    }
+
+    main .welcome h1 {
+        font-size: calcEm(35)
+    }
+
+    main .welcome .hello-div h1:nth-child(1) {
+        font-size: calcEm(25);
+    }
+
+    main .welcome .portfolio-div h1 a {
+        font-size: calcEm(45);
+    }
+
+    main .gallery h1, main .about h1, main .contact h1 {
+        font-size: calcEm(55)
+    }
+
+}
+
+
+/* ------------------- 992px ------------------------ */ 
+
+
+@media (max-width: 991.98px) {
+
+    main {
+        margin: 0 calcEm(55);
+    }
+
+    main .welcome {
+        top: calcEm(120);
+    }
+
+    main .welcome h1 {
+        font-size: calcEm(30)
+    }
+
+    main .welcome .hello-div h1:nth-child(1) {
+        font-size: calcEm(20);
+    }
+
+    main .welcome .portfolio-div h1 a {
+        font-size: calcEm(40);
+    }
+
+    .gallery h1, .about h1, .contact h1 {
+        font-size: calcEm(50)
+    }
+
+    main .gallery article .project-name-container h2 {
+        font-size: calcEm(33);
+    }
+
+}
+
+
+/* ------------------- 768px ------------------------ */ 
+
+
+@media (max-width: 767.98px) {
+
+
+    header img {
+        height: calcEm(35);
+        width: calcEm(35);
+    }
+
+    header nav {
+        height: 100vh;
+        background: $color-bg-darken;
+    }
+
+    header nav ul {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    header nav ul li a:hover {
+        border-left: calcEm(5) solid $color-bg-pale;
+    }
+
+    header nav ul li {
+        margin: calcEm(45) auto;
+    }
+
+    header nav ul a {
+        font-size: calcEm(30);
+        color: $color-text-lighten;
+    }
+
+    .toggle .line1{
+        background-color: $color-bg-pale;
+    }
+
+    .toggle .line3{
+        background-color: $color-bg-pale;
+    }
+
+    .burger div {
+        width: calcEm(35);
+    }
+
+    .burger div:nth-child(2) {
+        width: calcEm(25);
+    }
+
+    main {
+        margin: 0 calcEm(45);
+    }
+
+    main .welcome {
+        top: calcEm(100);
+    }
+
+    main .welcome h1 {
+        font-size: calcEm(25)
+    }
+
+    main .welcome .hello-div h1:nth-child(1) {
+        font-size: calcEm(15);
+    }
+
+    main .welcome .portfolio-div h1 a {
+        font-size: calcEm(35);
+    }
+
+    main .welcome .portfolio-div h2 {
+        font-size: calcEm(20);
+        margin-top: 4%;
+    }
+
+    main .welcome .hello-div img {
+        height: calcEm(40);
+        width: calcEm(40);
+    }
+
+    main .gallery h1, .about h1, .contact h1 {
+        font-size: calcEm(47)
+    }
+
+    main .gallery article {
+        flex-direction: column;
+    }
+
+    main .gallery article .cover-container {
+        height: auto;
+        width: 80%;
+    }
+
+    main .gallery article .cover-container img {
+        height: 100%;
+    }
+
+    main .gallery article .project-name-container {
+        height: 100%;
+        width: 100%;
+        margin-top: calcEm(41);
+    }
+
+    main .gallery article .project-name-container h2 {
+        margin: calcEm(9) auto;
+    }
+
+    main .about .about-section-div-one {
+        width: 100%;
+    }
+    main .about .about-section-div-two {
+        width: 90%;
+    }
+
+    main .contact article h2 {
+        font-size: calcEm(35);
+        letter-spacing: inherit;
+    }
+
+}
+
+
+/* ------------------- 576px ------------------------ */ 
+
+
+@media (max-width: 575.98px) {
+
+    main {
+        margin: 0 calcEm(25);
+    }
+
+    main .welcome {
+        top: calcEm(90);
+    }
+
+    main .welcome h1 {
+        font-size: calcEm(20)
+    }
+
+    main .welcome .hello-div h1:nth-child(1) {
+        font-size: calcEm(15);
+    }
+
+    main .welcome .portfolio-div h1 a {
+        font-size: calcEm(35);
+    }
+
+    main .welcome .hello-div img {
+        height: calcEm(30);
+        width: calcEm(30);
+    }
+
+    main .gallery article .cover-container {
+        width: 100%;
+    }
+
+    main .contact article h2 {
+        font-size: calcEm(27);
+    }
+
+    .animated-scroll-mouse {
+        top: 90%;
+    }
+
+}
+
+
+/* ------------------- 446px ------------------------ */ 
+
+
+@media (max-width: 445.98px) {
+
+    main .welcome .portfolio-div h2 {
+        margin-bottom: 6%;
+    }
+
+    main .welcome .hello-div img {
+        display: none;
+    }
+
+    main .gallery h1, main .about h1, main .contact h1 {
+        font-size: calcEm(45)
+    }
+
+    main .gallery article .project-name-container h2 {
+        font-size: calcEm(27);
+    }
+
+    main .about .about-section-div-one p {
+        font-size: calcEm(23);
+    }
+
+    main .about .about-section-div-two {
+        font-size: calcEm(27);
+    }
+
+}
+
+
+/* ------------------- 376px ------------------------ */ 
+
+
+@media (max-width: 375.98px) {
+
+    main .welcome .hello-div h1 {
+        font-size: calcEm(35)
+    }
+
+}

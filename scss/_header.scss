@@ -1,0 +1,107 @@
+
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 5;
+    top: 0;
+}
+
+header img {
+    margin: calcEm(14) calcEm(22);
+    height: calcEm(45);
+    width: calcEm(45);
+}
+
+.burger {
+    display: inline;
+    position: absolute;
+    top: calcEm(23);
+    right: calcEm(20);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.burger div {
+    width: calcEm(50);
+    height: calcEm(4);  
+    background-color: $color-bg-darken;
+    border-radius: calcEm(8);
+    margin: calcEm(5);
+    transition: all 0.7s ease;
+}
+
+.burger div:nth-child(2) {
+    width: calcEm(40);
+    margin-left: calcEm(20);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,4px);
+    background-color: $color-bg-darken;
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-7px,-8px); 
+    background-color: $color-bg-darken;
+}
+
+header nav {
+    position: absolute;
+    background: rgba(242, 242, 242, 0.7);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    opacity: 0;
+    margin: calcEm(26) calcEm(23);
+    transition: all 0.3s ease 0.3s;
+}
+
+header nav ul li a:hover {
+    border-left: calcEm(5) solid $color-bg-darken;
+}
+
+header nav ul li:nth-child(1) {
+    transition: all 0.4s ease 0.4s;
+}
+
+header nav ul li:nth-child(2) {
+    transition: all 0.4s ease 0.6s;
+}
+
+header nav ul li:nth-child(3) {
+    transition: all 0.4s ease 0.8s;
+}
+
+.fade-nav-li {
+    opacity: 1;
+}
+
+header nav ul a {
+    text-decoration: none;
+    font: {
+        size: calcEm(27);
+        weight: 250;
+    }
+    color: $color-text-darken;
+    text-transform: lowercase;
+}

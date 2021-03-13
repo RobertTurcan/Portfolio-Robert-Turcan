@@ -1,0 +1,29 @@
+
+
+
+
+footer {
+    margin-top: calcEm(30);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+footer div {
+    text-align: center;
+    margin: calcEm(10);
+}
+
+footer div p {
+    color: $color-text-darken;
+    font: {
+        size: calcEm(15);
+        weight: bold;
+    }
+    margin: calcEm(10);
+}
+
+footer div img {
+    height: auto;
+    width: calcEm(25)
+}
