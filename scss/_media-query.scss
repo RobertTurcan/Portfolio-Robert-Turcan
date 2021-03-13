@@ -185,6 +185,17 @@
         letter-spacing: inherit;
     }
 
+    #cursor {
+        position: initial;
+        width: initial;
+        height: initial;
+        border: none;
+        border-radius: none;
+        transform: none;
+        pointer-events: all;
+        z-index: 6;
+    }
+
 }
 
 
