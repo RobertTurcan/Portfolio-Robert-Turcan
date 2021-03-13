@@ -601,7 +601,17 @@ footer div img {
 
   main .contact article h2 {
     font-size: 2.1875em;
-    letter-spacing: inherit; } }
+    letter-spacing: inherit; }
+
+  #cursor {
+    position: initial;
+    width: initial;
+    height: initial;
+    border: none;
+    border-radius: none;
+    transform: none;
+    pointer-events: all;
+    z-index: 6; } }
 /* ------------------- 576px ------------------------ */
 @media (max-width: 575.98px) {
   main {

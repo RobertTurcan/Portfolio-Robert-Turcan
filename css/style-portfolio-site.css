@@ -358,7 +358,17 @@ footer div img {
     font-size: 1.25em; }
 
   main section div {
-    margin: 5.625em 0; } }
+    margin: 5.625em 0; }
+
+  #cursor {
+    position: initial;
+    width: initial;
+    height: initial;
+    border: none;
+    border-radius: none;
+    transform: none;
+    pointer-events: all;
+    z-index: 6; } }
 /* ------------------- 576px ------------------------ */
 @media (max-width: 575.98px) {
   main {
