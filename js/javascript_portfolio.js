@@ -99,11 +99,15 @@ window.onload = () => {
     const transition_el = document.querySelector('.transition');
     const anchors = document.querySelector('.transition-link');
     const content = document.querySelectorAll('.content-transition');
+    const outsideMain_el = document.querySelectorAll('.outside-main-element');
 
     setTimeout(() => {
         transition_el.classList.remove('is-active');
         content.forEach(element => {
             element.classList.add('is-content-active');
+        });
+        outsideMain_el.forEach(element => {
+            element.classList.add('is-outside-active');
         });
     }, 1100);
 
@@ -119,6 +123,9 @@ window.onload = () => {
             content.forEach(element => {
                 element.classList.remove('is-content-active');
             });
+            outsideMain_el.forEach(element => {
+            element.classList.remove('is-outside-active');
+        });
 
             setTimeout(() => {
                 window.location.href = target;
