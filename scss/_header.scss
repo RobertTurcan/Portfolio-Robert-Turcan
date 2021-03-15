@@ -54,26 +54,26 @@ header img {
 
 header nav {
     position: absolute;
-    background: rgba(242, 242, 242, 0.7);
+    background: rgba(242, 242, 242, 0.98);
     top: 0;
     right: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     text-align: center;
 }
 
 header nav ul {
     list-style: none;
-    height: auto;
+    height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 header nav ul li {
     opacity: 0;
     margin: calcEm(26) calcEm(23);
-    transition: all 0.3s ease 0.3s;
 }
 
 header nav ul li a:hover {
@@ -92,6 +92,11 @@ header nav ul li:nth-child(3) {
     transition: all 0.4s ease 0.8s;
 }
 
+header nav ul li:nth-child(4) {
+    transition: all 0.4s ease 1s;
+}
+
+
 .fade-nav-li {
     opacity: 1;
 }
@@ -99,9 +104,17 @@ header nav ul li:nth-child(3) {
 header nav ul a {
     text-decoration: none;
     font: {
-        size: calcEm(27);
+        size: calcEm(70);
         weight: 250;
     }
     color: $color-text-darken;
-    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+header nav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: calcEm(100);
 }

@@ -78,13 +78,11 @@
     }
 
     header nav {
-        height: 100vh;
         background: $color-bg-darken;
     }
-
-    header nav ul {
-        height: 100%;
-        flex-direction: column;
+    
+    header nav img {
+        display: none;
     }
 
     header nav ul li a:hover {

@@ -138,6 +138,7 @@ main, .gallery h1, .about h1, .contact h1 {
 .transition-1.is-active {
     pointer-events: all;
     display: initial;
+    cursor: none;
 }
 
 .content-transition {
@@ -148,3 +149,11 @@ main, .gallery h1, .about h1, .contact h1 {
 .content-transition.is-content-active {
     opacity: 1;
 }
+
+.outside-main-element {
+    display: none;
+}
+
+.outside-main-element.is-outside-active {
+    display: initial;
+} 

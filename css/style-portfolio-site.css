@@ -124,7 +124,8 @@ main, .gallery h1, .about h1, .contact h1 {
 
 .transition-1.is-active {
   pointer-events: all;
-  display: initial; }
+  display: initial;
+  cursor: none; }
 
 .content-transition {
   opacity: 0;
@@ -132,6 +133,12 @@ main, .gallery h1, .about h1, .contact h1 {
 
 .content-transition.is-content-active {
   opacity: 1; }
+
+.outside-main-element {
+  display: none; }
+
+.outside-main-element.is-outside-active {
+  display: initial; }
 
 header {
   position: fixed;
@@ -179,24 +186,24 @@ header img {
 
 header nav {
   position: absolute;
-  background: rgba(242, 242, 242, 0.7);
+  background: rgba(242, 242, 242, 0.98);
   top: 0;
   right: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   text-align: center; }
 
 header nav ul {
   list-style: none;
-  height: auto;
+  height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center; }
 
 header nav ul li {
   opacity: 0;
-  margin: 1.625em 1.4375em;
-  transition: all 0.3s ease 0.3s; }
+  margin: 1.625em 1.4375em; }
 
 header nav ul li a:hover {
   border-left: 0.3125em solid #1A1A26; }
@@ -210,15 +217,25 @@ header nav ul li:nth-child(2) {
 header nav ul li:nth-child(3) {
   transition: all 0.4s ease 0.8s; }
 
+header nav ul li:nth-child(4) {
+  transition: all 0.4s ease 1s; }
+
 .fade-nav-li {
   opacity: 1; }
 
 header nav ul a {
   text-decoration: none;
-  font-size: 1.6875em;
+  font-size: 4.375em;
   font-weight: 250;
   color: #1A1A26;
-  text-transform: lowercase; }
+  text-transform: capitalize; }
+
+header nav img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 6.25em; }
 
 main {
   margin-top: 12.5em; }
@@ -318,12 +335,10 @@ footer div img {
     width: 2.1875em; }
 
   header nav {
-    height: 100vh;
     background: #1A1A26; }
 
-  header nav ul {
-    height: 100%;
-    flex-direction: column; }
+  header nav img {
+    display: none; }
 
   header nav ul li a:hover {
     border-left: 0.3125em solid #F2F2F2; }

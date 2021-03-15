@@ -61,21 +61,7 @@
 
 })();
 
-// ANCHOR SCROLL ANIMATION
 
-(function () {
-    const navMenu = $('nav'),
-            links = navMenu.find('a');
-
-    links.on('click', function (event) {
-
-        $('html').animate({scrollTop: $(this.hash).offset().top}, 2000, function () {
-            event.preventDefault();
-        });
-
-
-    });
-}());
 
 // SCROLL TO TOP BUTTON
 
@@ -92,7 +78,7 @@
     var win = $(window);
     win.on('scroll', function () {
         if (win.scrollTop() > 800) {
-            backToTop.fadeIn(1000);
+            backToTop.fadeIn(1600);
 
         } else if (win.scrollTop() > 200) {
             scrollDown.fadeOut(500);

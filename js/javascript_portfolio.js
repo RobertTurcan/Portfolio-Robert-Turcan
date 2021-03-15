@@ -33,7 +33,7 @@
     var win = $(window);
     win.on('scroll', function () {
         if (win.scrollTop() > 00) {
-            backToTop.fadeIn(1000);
+            backToTop.fadeIn(1600);
         } else {
             backToTop.fadeOut();
         }
