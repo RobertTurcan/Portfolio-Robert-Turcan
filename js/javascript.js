@@ -44,7 +44,7 @@
         const imageUrl = $(this).attr('src');
         galleryCover.animate({opacity: '0'}, 200, function () {
             $(this).attr('src', imageUrl);
-        }).animate({opacity: '1'}, 250);
+        }).animate({opacity: '1'}, 950);
     });
 
 })();
