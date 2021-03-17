@@ -15,8 +15,12 @@
         font-size: calcEm(35)
     }
 
+    main .welcome .hello-div h1 {
+        font-size: calcEm(55);
+    }
+
     main .welcome .hello-div h1:nth-child(1) {
-        font-size: calcEm(25);
+        font-size: calcEm(20);
     }
 
     main .welcome .portfolio-div h1 a {
@@ -80,7 +84,7 @@
     header nav {
         background: $color-bg-darken;
     }
-    
+
     header nav img {
         display: none;
     }
@@ -214,12 +218,16 @@
         font-size: calcEm(20)
     }
 
+    main .welcome .hello-div h1 {
+        font-size: calcEm(35);
+    }
+
     main .welcome .hello-div h1:nth-child(1) {
         font-size: calcEm(15);
     }
 
     main .welcome .portfolio-div h1 a {
-        font-size: calcEm(35);
+        font-size: calcEm(30);
     }
 
     main .welcome .hello-div img {
@@ -252,7 +260,8 @@
     }
 
     main .welcome .hello-div img {
-        display: none;
+        height: calcEm(20);
+        width: calcEm(20);
     }
 
     main .gallery h1, main .about h1, main .contact h1 {
@@ -282,5 +291,4 @@
     main .welcome .hello-div h1 {
         font-size: calcEm(35)
     }
-
 }

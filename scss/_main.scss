@@ -27,11 +27,13 @@ main .welcome .hello-div {
 
 main .welcome .hello-div h1:nth-child(1) {
     margin-bottom: calcEm(10);
-    font-size: calcEm(30);
+    font-size: calcEm(25);
+    font-family: $font-family-raleway;
 }
 
 main .welcome .hello-div h1 {
-    font-size: calcEm(40);
+    font-size: calcEm(60);
+    font-family: $font-family-paris;
 }
 
 main .welcome .hello-div img {
@@ -52,7 +54,7 @@ main .welcome .portfolio-div {
 main .welcome .portfolio-div h2 {
     font-size: calcEm(30);
     color: $color-text-darken;
-    text-align: center;
+    text-align: right;
     width: 100%;
     margin-bottom: 4%;
 }

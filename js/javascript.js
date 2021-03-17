@@ -97,7 +97,7 @@
 (function () {
 
     const othersHeadings = $('.gallery, .about, .contact').find('h1');
-    const firstHeadingWelcome = $('.hello-div').find('h1');
+    const firstHeadingWelcome = $('.hello-div').find('h1:nth-child(2)');
     const secondHeadingWelcome = $('.portfolio-div').find('h1');
 
     $(window).scroll(function () {
@@ -110,8 +110,8 @@
                 firstHeadingWelcome.css({transform: 'skewX(-7deg)', transition: 'all 2.5s ease-out'});
                 secondHeadingWelcome.css({transform: 'skewX(7deg)', transition: 'all 2.5s ease-out'});
             } else {
-                firstHeadingWelcome.css({transform: 'translateX(350px)', transition: 'all 2.5s ease-out'});
-                secondHeadingWelcome.css({transform: 'translateX(-350px)', transition: 'all 2.5s ease-out'});
+                firstHeadingWelcome.css({transform: 'translateY(-30px)', transition: 'all 2.5s ease-out'});
+                secondHeadingWelcome.css({transform: 'translateY(-30px)', transition: 'all 2.5s ease-out'});
             }
         }
 
