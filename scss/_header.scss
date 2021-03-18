@@ -77,7 +77,7 @@ header nav ul li {
 }
 
 header nav ul li a:hover {
-    border-left: calcEm(5) solid $color-bg-darken;
+    border-left: calcEm(1.25) dotted $color-bg-darken;
 }
 
 header nav ul li:nth-child(1) {

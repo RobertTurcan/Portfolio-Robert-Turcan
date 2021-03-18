@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'raleway';
+  src: url(../fonts/Raleway-Thin.ttf) format("truetype"); }
+@font-face {
+  font-family: 'raleway-bold';
+  src: url(../fonts/Raleway-Light.ttf) format("truetype"); }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +60,8 @@ header {
   font-family: "raleway-bold", sans-serif, Georgia; }
 
 main, .gallery h1, .about h1, .contact h1 {
-  font-family: "raleway", serif, Georgia; }
+  font-family: "raleway", serif, Georgia;
+  font-weight: 450; }
 
 .animated-scroll-mouse {
   position: fixed;
@@ -120,7 +127,8 @@ main, .gallery h1, .about h1, .contact h1 {
 
 .transition-1 img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  opacity: 0.75; }
 
 .transition-1.is-active {
   pointer-events: all;
@@ -206,7 +214,7 @@ header nav ul li {
   margin: 1.625em 1.4375em; }
 
 header nav ul li a:hover {
-  border-left: 0.3125em solid #1A1A26; }
+  border-left: 0.078125em dotted #1A1A26; }
 
 header nav ul li:nth-child(1) {
   transition: all 0.4s ease 0.4s; }

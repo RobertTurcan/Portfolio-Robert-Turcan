@@ -70,10 +70,10 @@
 }
 
 
-/* ------------------- 768px ------------------------ */ 
+/* ------------------- 769px ------------------------ */ 
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
 
 
     header img {
@@ -90,7 +90,7 @@
     }
 
     header nav ul li a:hover {
-        border-left: calcEm(5) solid $color-bg-pale;
+        border-left: calcEm(2) dotted $color-bg-pale;
     }
 
     header nav ul li {
@@ -290,5 +290,10 @@
 
     main .welcome .hello-div h1 {
         font-size: calcEm(35)
+    }
+    
+     main .contact article h2 {
+        font-size: calcEm(25);
+        letter-spacing: inherit;
     }
 }

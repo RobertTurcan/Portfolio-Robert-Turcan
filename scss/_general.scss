@@ -58,6 +58,7 @@ header {
 
 main, .gallery h1, .about h1, .contact h1 {
     font-family: $font-family-raleway;
+    font-weight: 450;
 }
 
 
@@ -133,6 +134,7 @@ main, .gallery h1, .about h1, .contact h1 {
 .transition-1 img {
     width: 100%;
     height: 100%;
+    opacity: 0.75;
 }
 
 .transition-1.is-active {
