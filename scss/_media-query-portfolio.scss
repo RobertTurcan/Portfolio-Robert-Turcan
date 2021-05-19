@@ -66,10 +66,6 @@
         width: calcEm(35);
     }
 
-    header nav {
-        background: $color-bg-darken;
-    }
-
     header nav img {
         display: none;
     }
@@ -84,23 +80,10 @@
 
     header nav ul a {
         font-size: calcEm(30);
-        color: $color-text-lighten;
     }
 
-    .toggle .line1{
-        background-color: $color-bg-pale;
-    }
-
-    .toggle .line3{
-        background-color: $color-bg-pale;
-    }
-
-    .burger div {
-        width: calcEm(35);
-    }
-
-    .burger div:nth-child(2) {
-        width: calcEm(25);
+    header .burger div {
+        font-size: calcEm(19);
     }
 
     main {

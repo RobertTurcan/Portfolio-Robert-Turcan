@@ -536,9 +536,6 @@ footer div img {
     height: 2.1875em;
     width: 2.1875em;
   }
-  header nav {
-    background: #130B26;
-  }
   header nav img {
     display: none;
   }
@@ -550,19 +547,9 @@ footer div img {
   }
   header nav ul a {
     font-size: 1.875em;
-    color: #F2F2F2;
   }
-  .toggle .line1 {
-    background-color: #F2E8DF;
-  }
-  .toggle .line3 {
-    background-color: #F2E8DF;
-  }
-  .burger div {
-    width: 2.1875em;
-  }
-  .burger div:nth-child(2) {
-    width: 1.5625em;
+  header .burger div {
+    font-size: 1.1875em;
   }
   main {
     margin: 12.5em 2.8125em 0 2.8125em;
