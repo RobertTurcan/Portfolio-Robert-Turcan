@@ -18,28 +18,20 @@ main .welcome {
 
 
 main .welcome .hello-div {
-    color: $color-text-darken;
-    font-size: calcEm(30);
     text-align: left;
     padding: 4% 0;
 }
 
-main .welcome .hello-div h1:nth-child(1) {
+main .welcome .hello-div h2 {
     margin-bottom: calcEm(10);
-    font-size: calcEm(20);
-    font-style: italic;
-    font-weight: 600;
 }
 
 main .welcome .hello-div h1 {
-    font-size: calcEm(50);
     text-transform: uppercase;
-    font-weight: 450;
 }
 
 main .welcome .hello-div img {
-    height: calcEm(60);
-    width: calcEm(60);
+    width: calcEm(125);
     position: absolute;
     bottom: calcEm(5);
     left: 0;
@@ -52,26 +44,19 @@ main .welcome .portfolio-div {
 }
 
 main .welcome .portfolio-div h2 {
-    font-size: calcEm(30);
-    color: $color-text-darken;
     text-align: right;
     width: 99%;
-    margin-bottom: 4%;
-    font-style: italic;
-    font-weight: 600;
+    margin-bottom: calcEm(10);
 }
 
 main .welcome .portfolio-div h1 {
     display: inline-block;
     text-transform: uppercase; 
-    font-weight: 450;
 }
 
 main .welcome .portfolio-div h1 a {
     text-decoration: none;
-    color: $color-text-darken;
     z-index: 5;
-    font-size: calcEm(55);
 }
 
 main .welcome .portfolio-div #hidden-heading {
@@ -95,8 +80,6 @@ main .gallery {
 }
 
 main .gallery h1 {
-    font-size: calcEm(60);
-    color: $color-text-darken;
     text-transform: uppercase;
     margin-bottom: calcEm(20);
 }
@@ -130,7 +113,6 @@ main .gallery article .project-name-container {
 }
 
 main .gallery article .project-name-container h2 {
-    font-size: calcEm(40);
     margin: calcEm(12) 0;
     cursor: pointer;
     letter-spacing: calcEm(1.1);
@@ -152,15 +134,12 @@ main .about {
 }
 
 main .about h1 {
-    font-size: calcEm(60);
     margin-bottom: calcEm(20);
-    color: $color-text-darken;
     text-transform: uppercase;
 }
 
 main .about h2 {
     margin-bottom: calcEm(25);
-    font-size: calcEm(30);
 }
 
 main .about article {
@@ -179,50 +158,23 @@ main .about .about-section-div-one {
     position: relative;
 }
 
-main .about .about-section-div-one h2 {
-    text-align: left;
-}
-
-main .about .about-section-div-one p {
-    font: {
-        size: calcEm(27);
-        weight: bold;
-    } 
-    color: $color-text-darken;
+main .about .about-section-div-one p { 
     line-height: calcEm(30);
     text-align: justify;
 }
 
 main .about .about-section-div-one p a {
     text-decoration: none;
-    font: {
-        size: inherit;
-        weight: bold;
-    } 
-    color: $color-text-darken;
-}
-
-main .about article div h2 {
-    font-size: calcEm(30);
-    margin: calcEm(30) calcEm(20);
-    z-index: 1;
-    color: $color-text-darken;
-}
-
-main .about article div h3 {
-    font-size: calcEm(22);
 }
 
 main .about .about-section-div-two {
     height: 100%;
     width: 70%;
     margin-top: calcEm(15);
-    text-align: center;
-    font: {
-        size: calcEm(30);
-        weight: bold;
-    } 
-    color: $color-text-darken;
+    line-height: calcEm(30);
+}
+
+main .about .about-section-div-two p { 
     line-height: calcEm(30);
 }
 
@@ -246,9 +198,7 @@ main .contact {
 }
 
 main .contact h1 {
-    font-size: calcEm(60);
     margin-bottom: calcEm(20);
-    color: $color-text-darken;
     text-transform: uppercase;
 }
 
@@ -257,26 +207,20 @@ main .contact article {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: calcEm(20) auto;
     flex-direction: column;
 }
 
-main .contact article h3 {
-    font-size: calcEm(30);
+main .contact article h2:nth-child(1) {
     text-align: inline;
     width: 100%;
-    color: $color-text-darken;
 }
 
 main .contact article h2 {
-    font-size: calcEm(45);
     letter-spacing: calcEm(2);
-    color: $color-text-darken;
-    margin: calcEm(15) auto;
+    margin-bottom: calcEm(18) ;
 }
 
 main .contact article h2 a {
-    color: $color-text-darken;
     text-decoration: none;
 }
 
@@ -292,22 +236,12 @@ main .contact article .contact-media-container a {
 }
 
 main .contact article .contact-media-container a img {
-    width: calcEm(70);
+    width: calcEm(60);
     height: auto;
     margin: calcEm(10) calcEm(20);
 }
 
 main .contact article .contact-media-container a span {
     opacity: 0;
-    font-size: calcEm(20);
-    font-weight: bolder;
-    color: $color-text-darken;
+    font-weight: 600;
 }
-
-
-
-
-
-
-
-

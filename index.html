@@ -6,7 +6,7 @@
         <link rel="icon" href="images/icons/R-logo.svg">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="scss/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="transition transition-1 is-active"><img src="images/icons/stand-by-technicolor.png" alt="stand-by"></div>
@@ -14,9 +14,8 @@
         
         <header class="content-transition">
             <div class='burger'>
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <div class="line1">menu</div>
+                <div class="line2">hide</div>
             </div>
             <img src="images/icons/R-logo.svg" alt="logo">
             <nav>
@@ -33,7 +32,7 @@
 
             <section class="welcome" id="home">
                 <div class='hello-div'>
-                    <h1>hello there, I'm</h1>
+                    <h2>hello there, I'm</h2>
                     <h1>Robert Turcan</h1>
                     <img id='scrolldown-icon' src="images/icons/scroll-down-icon.svg" alt="scroll-down">
                 </div>
@@ -45,34 +44,55 @@
             </section>
 
             <section class="gallery" id="gallery">
-                <h1>Latest works.</h1>
-                <article>
-                    <div class="cover-container tilt"><a href="portfolio.html"><img src="images/homepage-images/hyperia-vintage-bg.jpg" alt="gallery-item"></a></div>
+                <h1>Latest works</h1>
+                <article class="gallery-first-item">
+                    <div class="cover-container tilt"><a href="portfolio.html#TTG"><img src="images/homepage-images/TTG-vintage-bg.jpg" alt="gallery-item"></a></div>
                     <div class="project-name-container">
-                        <h2 src="images/homepage-images/hyperia-vintage-bg.jpg"><span>1.</span>Hyperia home</h2>
-                        <h2 src="images/homepage-images/circle-vintage-bg.jpg"><span>2.</span>Circle company</h2>
-                        <h2 src="images/homepage-images/TTG-vintage-bg.jpg"><span>3.</span>ThØrsten Thunder Garage</h2>
+                        <p>Thørsten Thunder Garage</p>
+                        <h2 src="images/homepage-images/TTG-vintage-bg.jpg"><span>1.</span>Artboard</h2>
+                        <h2 src="images/homepage-images/TTG_BC.jpg"><span>2.</span>Bussines Card</h2>
+                        <h2 src="images/homepage-images/TTG-logo-artboard.jpg"><span>3.</span>Logo</h2>
+                    </div>
+                </article>
+
+                <article class="gallery-second-item">
+                    <div class="cover-container tilt"><a href="portfolio.html#hyperia"><img src="images/homepage-images/hyperia-artboard.jpg" alt="gallery-item"></a></div>
+                    <div class="project-name-container">
+                        <p>Hyperia</p>
+                        <h2 src="images/homepage-images/hyperia-artboard.jpg"><span>1.</span>Artboard</h2>
+                        <h2 src="images/homepage-images/hyperia-illustrations.jpg"><span>2.</span>Illustrations</h2>
+                        <h2 src="images/homepage-images/hyperia-logo.jpg"><span>3.</span>Logo</h2>
+                    </div>
+                </article>
+
+                <article class="gallery-third-item">
+                    <div class="cover-container tilt"><a href="portfolio.html"><img src="images/homepage-images/Isometric-eff.jpg" alt="gallery-item"></a></div>
+                    <div class="project-name-container">
+                        <p>Creative work</p>
+                        <h2 src="images/homepage-images/Isometric-eff.jpg"><span>1.</span>Isometric</h2>
+                        <h2 src="images/homepage-images/hand-background.jpg"><span>2.</span>Sketch</h2>
+                        <h2 src="images/homepage-images/icelander.jpg"><span>3.</span>Drakkar</h2>
                     </div>
                 </article>
             </section>
 
             <section class="about" id="about">
-                <h1>About me.</h1>
+                <h1>About me</h1>
                 <h2>Hello, dear <span id="toggle-word-effect"></span></h2>
                 <article>
                     <div class="about-section-div-one">                       
                         <p>My name is Robert Turcan and I'm self-taught web designer from <a href="https://bit.ly/3uZyiXM" target='_blank'>Zilina</a>. About a year ago I found passion in web graphic, illustrating and creative development. I prefer simple things, that's why I'm always trying to find balance between aesthetics and minimalism. In the future I would like to learn more about UI/UX design and improve my skills. In these days I'm still working on my portfolio, so keep in sight! <p>
                     </div>
                     <div class="about-section-div-two">
-                        This modest website was build with <img src="images/icons/css3-portfolio-icon.svg" alt="CSS"><img src="images/icons/javascript-icon.svg" alt="JS"><img src="images/icons/Jquery-icon.svg" alt="jquery"><img src="images/icons/adobeai-logo.svg" alt="adobe-ai">.
+                        <p>This modest website was build with <img src="images/icons/css3-portfolio-icon.svg" alt="CSS"><img src="images/icons/javascript-icon.svg" alt="JS"><img src="images/icons/Jquery-icon.svg" alt="jquery"><img src="images/icons/adobeai-logo.svg" alt="adobe-ai">.</p>
                     </div>
                 </article>
             </section>
 
             <section class="contact" id="contact">
-                <h1>say hi.</h1>
+                <h1>say hi</h1>
                 <article>
-                    <h3>Call me or send me a message</h3>
+                    <h2>Call me or send me a message</h2>
                     <h2><a href="mailto:turcan.robert15@gmail.com">turcan.robert15@gmail.com</a></h2>
                     <h2>+421 903 536 613</h2>
                     <div class="contact-media-container">
@@ -91,7 +111,7 @@
                 <img src="images/icons/R-logo.svg" alt="heart">
             </div>
         </footer>
-        <div class="animated-scroll-mouse outside-main-element"><img src="images/icons/to-top-icon.svg" alt="scroll-up"></div>
+        <div class="animated-scroll-mouse outside-main-element"><img src="images/icons/scroll-up-icon.svg" alt="scroll-up"></div>
 
         <script defer src="js/jquery-3.5.1.js" type="text/javascript"></script>
         <script defer src="js/tilt.jquery.js" type="text/javascript"></script>

@@ -13,15 +13,43 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-color: $color-bg-pale;
     overflow-x: hidden;
     opacity: 1;
     font-size-adjust: 0.5;
+    cursor: none;
+    font-family: $font-family-courier;
 }
 
+body h1 {
+    font-size: calcEm(60);
+    font-weight: 300;
+    color: $color-text-darken;
+}
+
+body .welcome h1, header nav ul a {
+    font-size: calcEm(80);
+}
+
+body h2 {
+    font-size: calcEm(35);
+    font-weight: 600;
+    color: $color-text-darken;
+}
+
+body p {
+    font-size: calcEm(27);
+    font-weight: 600;
+    color: $color-text-darken;
+}
+
+body a {
+    cursor: none;
+    color: $color-text-darken;
+}
 
 body::after {
-    animation: grain 12s steps(10) infinite;
+    animation: grain 5s steps(10) infinite;
     background-image: url(../images/homepage-images/noise-bg.png);
     content: "";
     height: 300%;
@@ -29,7 +57,7 @@ body::after {
     position: fixed;
     top: -110%;
     width: 300%;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 @keyframes grain {
@@ -52,20 +80,9 @@ main {
     height: 100%;
 }
 
-header {
-    font-family: $font-family-raleway-bold;
-}
-
-main, .gallery h1, .about h1, .contact h1 {
-    font-family: $font-family-raleway;
-    font-weight: 450;
-}
-
-
-
 .animated-scroll-mouse {
     position: fixed;
-    top: 50%;
+    top: 90%;
     right: 1%;
     z-index: 4;
     cursor: pointer;
@@ -88,9 +105,9 @@ main, .gallery h1, .about h1, .contact h1 {
 
 #cursor {
     position: absolute;
-    width: calcEm(60);
-    height: calcEm(60);
-    border: 2.2px solid $color-bg-lighten;
+    width: calcEm(20);
+    height: calcEm(20);
+    border: 2px solid $color-bg-lighten;
     border-radius: 50%;
     transform: translate(-50%,-50%);
     pointer-events: none;
@@ -98,14 +115,6 @@ main, .gallery h1, .about h1, .contact h1 {
 }
 
 .link-scale {
-    background: url(../images/icons/click-logo.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.6;
-}
-
-.image-hover {
     background: url(../images/icons/view-icon.svg);
     background-position: center;
     background-repeat: no-repeat;

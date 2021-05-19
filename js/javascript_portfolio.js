@@ -47,8 +47,8 @@
 (function () {
 
     const cursor = document.getElementById('cursor');
-    const links = document.querySelectorAll('body a, .burger, .animated-scroll-mouse');
-    const images = document.querySelectorAll('main div a img');
+    const links = document.querySelectorAll('body a');
+    const others = document.querySelectorAll('.burger, .animated-scroll-mouse, .gallery div h2');
 
     window.addEventListener('mousemove', function (event) {
 
@@ -59,21 +59,25 @@
     links.forEach(link => {
         link.addEventListener('mouseover', () => {
             cursor.classList.add('link-scale');
+            cursor.style.width = '80px';
+            cursor.style.height = '80px';
+            cursor.style.border = 'none';
         });
         link.addEventListener('mouseleave', () => {
             cursor.classList.remove('link-scale');
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.border = '2px solid #F26D3D';
         });
     });
 
-    images.forEach(img => {
-    img.addEventListener('mouseover', () => {
-        cursor.classList.add('image-hover-portfolio');
-        cursor.style.transform = 'scale(2)';
-    });
-    img.addEventListener('mouseleave', () => {
-        cursor.classList.remove('image-hover-portfolio');
-        cursor.style.transform = 'translate(-50%,-50%)';
-    });
+    others.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            cursor.style.border = 'none'
+        });
+        link.addEventListener('mouseleave', () => {
+            cursor.style.border = '2px solid #F26D3D'
+        });
     });
 
 })();

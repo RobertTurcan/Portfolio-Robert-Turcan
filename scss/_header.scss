@@ -12,54 +12,53 @@ header {
 }
 
 header img {
-    margin: calcEm(14) calcEm(22);
-    height: calcEm(45);
-    width: calcEm(45);
+    margin: calcEm(29);
+    height: calcEm(40);
+    width: calcEm(40);
 }
 
 .burger {
     display: inline;
     position: absolute;
-    top: calcEm(23);
-    right: calcEm(20);
+    top: calcEm(29);
+    right: calcEm(29);
     z-index: 5;
     cursor: pointer;
 }
 
 .burger div {
-    width: calcEm(50);
-    height: calcEm(4);  
-    background-color: $color-bg-darken;
-    border-radius: calcEm(8);
-    margin: calcEm(5);
-    transition: all 0.7s ease;
+    margin: 0;
+    transition: all 0.4s ease;
+    font-size: calcEm(25);
+    font-weight: bold;
+    text-align: left;
+    color: $color-text-darken;
 }
 
-.burger div:nth-child(2) {
-    width: calcEm(40);
-    margin-left: calcEm(20);
+.burger .line2 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,4px);
-    background-color: $color-bg-darken;
-}
-.toggle .line2{
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-7px,-8px); 
-    background-color: $color-bg-darken;
+
+.toggle .line2{
+    opacity: 1;
 }
 
 header nav {
+    background: lighten($color-bg-pale, 7%);
     position: absolute;
-    background: rgba(242, 242, 242, 0.98);
     top: 0;
     right: 0;
     width: 100%;
     height: 100vh;
     text-align: center;
+    opacity: 1;
 }
 
 header nav ul {
@@ -77,7 +76,8 @@ header nav ul li {
 }
 
 header nav ul li a:hover {
-    border-left: calcEm(1.25) dotted $color-bg-darken;
+    color: $color-bg-lighten;
+    transition: 0.4s ease;
 }
 
 header nav ul li:nth-child(1) {
@@ -103,10 +103,6 @@ header nav ul li:nth-child(4) {
 
 header nav ul a {
     text-decoration: none;
-    font: {
-        size: calcEm(70);
-        weight: 250;
-    }
     color: $color-text-darken;
     text-transform: capitalize;
 }
@@ -116,5 +112,5 @@ header nav img {
     top: 0;
     left: 0;
     height: auto;
-    width: calcEm(60);
+    width: calcEm(40);
 }

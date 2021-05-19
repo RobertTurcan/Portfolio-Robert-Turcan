@@ -34,17 +34,47 @@
 
 // GALLERY ANIMATION - IMAGE SLIDE
 
-(function () {
+(function firstItem () {
 
-    const galleryButton = $('.gallery').find('h2');
+    const galleryButton = $('.gallery-first-item').find('h2');
 
     galleryButton.on('click', function () {
-        const galleryCover = $('.cover-container img');
-        const galleryDiv = $('.cover-container');
+        const galleryCover = $('.gallery-first-item .cover-container img');
+        const galleryDiv = $('.gallery-first-item .cover-container');
         const imageUrl = $(this).attr('src');
-        galleryCover.animate({opacity: '0'}, 200, function () {
+        galleryCover.animate({ opacity: '0' }, 200, function () {
             $(this).attr('src', imageUrl);
-        }).animate({opacity: '1'}, 950);
+        }).animate({ opacity: '1' }, 950);
+    });
+
+})();
+
+(function secondItem () {
+
+    const galleryButton = $('.gallery-second-item').find('h2');
+
+    galleryButton.on('click', function () {
+        const galleryCover = $('.gallery-second-item .cover-container img');
+        const galleryDiv = $('.gallery-second-item .cover-container');
+        const imageUrl = $(this).attr('src');
+        galleryCover.animate({ opacity: '0' }, 200, function () {
+            $(this).attr('src', imageUrl);
+        }).animate({ opacity: '1' }, 950);
+    });
+
+})();
+
+(function thirdItem () {
+
+    const galleryButton = $('.gallery-third-item').find('h2');
+
+    galleryButton.on('click', function () {
+        const galleryCover = $('.gallery-third-item .cover-container img');
+        const galleryDiv = $('.gallery-third-item .cover-container');
+        const imageUrl = $(this).attr('src');
+        galleryCover.animate({ opacity: '0' }, 200, function () {
+            $(this).attr('src', imageUrl);
+        }).animate({ opacity: '1' }, 950);
     });
 
 })();
@@ -72,7 +102,7 @@
     const scrollDown = $('#scrolldown-icon');
 
     backToTop.on('click', function () {
-        $('html').animate({scrollTop: 0}, 2000);
+        $('html').animate({ scrollTop: 0 }, 2000);
     });
 
     var win = $(window);
@@ -101,17 +131,17 @@
     const secondHeadingWelcome = $('.portfolio-div').find('h1');
 
     $(window).scroll(function () {
-        othersHeadings.css({transform: 'skew(4deg,4deg)', transition: 'all 1.5s ease-out'});
+        othersHeadings.css({ transform: 'skew(4deg,4deg)', transition: 'all 1.5s ease-out' });
 
         /*----media query function-----------*/
 
         function mediaQuery(x) {
             if (x.matches) {
-                firstHeadingWelcome.css({transform: 'skewX(-7deg)', transition: 'all 2.5s ease-out'});
-                secondHeadingWelcome.css({transform: 'skewX(7deg)', transition: 'all 2.5s ease-out'});
+                firstHeadingWelcome.css({ transform: 'skewX(-7deg)', transition: 'all 2.5s ease-out' });
+                secondHeadingWelcome.css({ transform: 'skewX(7deg)', transition: 'all 2.5s ease-out' });
             } else {
-                firstHeadingWelcome.css({transform: 'translateY(-30px)', transition: 'all 2.5s ease-out'});
-                secondHeadingWelcome.css({transform: 'translateY(-30px)', transition: 'all 2.5s ease-out'});
+                firstHeadingWelcome.css({ transform: 'translateY(-30px)', transition: 'all 2.5s ease-out' });
+                secondHeadingWelcome.css({ transform: 'translateY(-30px)', transition: 'all 2.5s ease-out' });
             }
         }
 
@@ -123,9 +153,9 @@
 
         clearTimeout($.data(this, 'scrollCheck'));
         $.data(this, 'scrollCheck', setTimeout(function () {
-            othersHeadings.css({transform: 'none'});
-            firstHeadingWelcome.css({transform: 'none'});
-            secondHeadingWelcome.css({transform: 'none'});
+            othersHeadings.css({ transform: 'none' });
+            firstHeadingWelcome.css({ transform: 'none' });
+            secondHeadingWelcome.css({ transform: 'none' });
         }, 150));
     });
 
@@ -155,7 +185,7 @@
             typecount++;
             index = 0;
             setTimeout(typeing, 2000);
-            document.querySelector('#toggle-word-effect').style.color = '#35F287';
+            document.querySelector('#toggle-word-effect').style.color = '#F26D3D';
         } else {
             setTimeout(typeing, 400);
             document.querySelector('#toggle-word-effect').style.color = 'inherit';
@@ -170,8 +200,8 @@
 (function () {
 
     const cursor = document.getElementById('cursor');
-    const links = document.querySelectorAll('body a, .burger, .animated-scroll-mouse, .gallery div h2');
-    const images = document.querySelector('.cover-container img');
+    const links = document.querySelectorAll('body a');
+    const others = document.querySelectorAll('.burger, .animated-scroll-mouse, .gallery div h2');
 
     window.addEventListener('mousemove', function (event) {
 
@@ -182,19 +212,25 @@
     links.forEach(link => {
         link.addEventListener('mouseover', () => {
             cursor.classList.add('link-scale');
+            cursor.style.width = '80px';
+            cursor.style.height = '80px';
+            cursor.style.border = 'none';
         });
         link.addEventListener('mouseleave', () => {
             cursor.classList.remove('link-scale');
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.border = '2px solid #F26D3D';
         });
     });
 
-    images.addEventListener('mouseover', () => {
-        cursor.classList.add('image-hover');
-        cursor.style.transform = 'scale(2)';
-    });
-    images.addEventListener('mouseleave', () => {
-        cursor.classList.remove('image-hover');
-        cursor.style.transform = 'translate(-50%,-50%)';
+    others.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            cursor.style.border = 'none'
+        });
+        link.addEventListener('mouseleave', () => {
+            cursor.style.border = '2px solid #F26D3D'
+        });
     });
 
 })();
@@ -209,9 +245,9 @@
 
     contactIcons.on('mouseenter mouseleave', function (event) {
         if (event.type === 'mouseenter') {
-            $(this).find('span').css({opacity: 1});
+            $(this).find('span').css({ opacity: 1 });
         } else {
-            $(this).find('span').css({opacity: 0});
+            $(this).find('span').css({ opacity: 0 });
         }
     });
 
@@ -251,8 +287,8 @@ window.onload = () => {
                 element.classList.remove('is-content-active');
             });
             outsideMain_el.forEach(element => {
-            element.classList.remove('is-outside-active');
-        });
+                element.classList.remove('is-outside-active');
+            });
 
             setTimeout(() => {
                 window.location.href = target;

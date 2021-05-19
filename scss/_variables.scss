@@ -3,28 +3,27 @@
 
 
 $color-text-lighten: #F2F2F2;
-$color-text-darken: #1A1A26;
+$color-text-darken: #130B26;
 
-$color-bg-darken: #1A1A26;
-$color-bg-lighten: #35F287;
-$color-bg-pale: #F2F2F2;
+$color-bg-darken: #130B26;
+$color-bg-lighten: #F26D3D;
+$color-bg-pale: #F2E8DF;
 
 $font-size-base: 100%;
 
-$font-family-raleway: 'raleway', serif, Georgia;
-$font-family-raleway-bold: 'raleway-bold', sans-serif, Georgia;
-$font-family-typewrite: 'typewrite', sans-serif, Georgia;
+$font-family-montserrat: 'montserrat', serif, Georgia;
+$font-family-courier: 'courier', serif, Georgia;
 
 
 // FONTS
 //........................................
 
 @font-face {
-    font-family: 'raleway';
-    src: url(../fonts/Raleway-Thin.ttf) format('truetype');
+    font-family: 'montserrat';
+    src: url(../fonts/Montserrat-Thin.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'raleway-bold';
-    src: url(../fonts/Raleway-Light.ttf) format('truetype');
+    font-family: 'courier';
+    src: url(../fonts/CourierPrime-Regular.ttf) format('truetype');
 }

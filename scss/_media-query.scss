@@ -19,11 +19,11 @@
         font-size: calcEm(55);
     }
 
-    main .welcome .hello-div h1:nth-child(1) {
+    main .welcome .hello-div h2 {
         font-size: calcEm(20);
     }
 
-    main .welcome .portfolio-div h1 a {
+    main .welcome .portfolio-div h1 {
         font-size: calcEm(45);
     }
 
@@ -51,11 +51,7 @@
         font-size: calcEm(30)
     }
 
-    main .welcome .hello-div h1:nth-child(1) {
-        font-size: calcEm(20);
-    }
-
-    main .welcome .portfolio-div h1 a {
+    main .welcome .portfolio-div h1 {
         font-size: calcEm(40);
     }
 
@@ -81,16 +77,8 @@
         width: calcEm(35);
     }
 
-    header nav {
-        background: $color-bg-darken;
-    }
-
     header nav img {
         display: none;
-    }
-
-    header nav ul li a:hover {
-        border-left: calcEm(2) dotted $color-bg-pale;
     }
 
     header nav ul li {
@@ -99,23 +87,11 @@
 
     header nav ul a {
         font-size: calcEm(30);
-        color: $color-text-lighten;
+        color: $color-text-darken;
     }
 
-    .toggle .line1{
-        background-color: $color-bg-pale;
-    }
-
-    .toggle .line3{
-        background-color: $color-bg-pale;
-    }
-
-    .burger div {
-        width: calcEm(35);
-    }
-
-    .burger div:nth-child(2) {
-        width: calcEm(25);
+    header .burger div {
+        font-size: calcEm(19);
     }
 
     main {
@@ -134,7 +110,7 @@
         font-size: calcEm(15);
     }
 
-    main .welcome .portfolio-div h1 a {
+    main .welcome .portfolio-div h1 {
         font-size: calcEm(35);
     }
 
@@ -144,8 +120,8 @@
     }
 
     main .welcome .hello-div img {
-        height: calcEm(40);
-        width: calcEm(40);
+        height: calcEm(90);
+        width: calcEm(90);
     }
 
     main .gallery h1, .about h1, .contact h1 {
@@ -185,6 +161,7 @@
     main .contact article h2 {
         font-size: calcEm(35);
         letter-spacing: inherit;
+        word-break: break-all;
     }
 
     #cursor {
@@ -195,7 +172,6 @@
         border-radius: none;
         transform: none;
         pointer-events: all;
-        z-index: 6;
     }
 
 }
@@ -222,17 +198,17 @@
         font-size: calcEm(35);
     }
 
-    main .welcome .hello-div h1:nth-child(1) {
+    main .welcome .hello-div h2 {
         font-size: calcEm(15);
     }
 
-    main .welcome .portfolio-div h1 a {
+    main .welcome .portfolio-div h1 {
         font-size: calcEm(30);
     }
 
     main .welcome .hello-div img {
-        height: calcEm(30);
-        width: calcEm(30);
+        height: calcEm(70);
+        width: calcEm(70);
     }
 
     main .gallery article .cover-container {
@@ -260,8 +236,8 @@
     }
 
     main .welcome .hello-div img {
-        height: calcEm(20);
-        width: calcEm(20);
+        height: calcEm(50);
+        width: calcEm(50);
     }
 
     main .gallery h1, main .about h1, main .contact h1 {
@@ -276,7 +252,7 @@
         font-size: calcEm(23);
     }
 
-    main .about .about-section-div-two {
+    main .about .about-section-div-two p {
         font-size: calcEm(27);
     }
 
